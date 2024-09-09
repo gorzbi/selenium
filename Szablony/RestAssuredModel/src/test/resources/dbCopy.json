@@ -1,0 +1,69 @@
+{
+  "posts": [
+    {
+      "title": "hej",
+      "author": "hejbody",
+      "id": 1
+    },
+    {
+      "title": "Do aktualizacji ten tytul",
+      "author": "Nowy autor",
+      "id": 2
+    },
+    {
+      "title": "Bedzie aktualizowane",
+      "author": "Bedzie aktualizowane",
+      "id": 3
+    },
+    {
+      "title": "elo1",
+      "author": "elo1",
+      "id": 4
+    },
+    {
+      "author": "cos",
+      "title": "cos",
+      "id": 5
+    },
+    {
+      "id": 6,
+      "title": "hej",
+      "author": "hejauthor"
+    },
+    {
+      "id": 7,
+      "title": "hej",
+      "author": "hejauthor"
+    },
+    {
+      "title": "koszmar",
+      "author": "desmond",
+      "id": 8
+    },
+    {
+      "title": "Nowiutki tytul",
+      "author": "Nowiutki autor",
+      "id": 9
+    },
+    {
+      "title": "Nowiutki tytul",
+      "author": "Nowiutki autor",
+      "id": 10
+    },
+    {
+      "title": "Do usuniecia ten post",
+      "author": "New autor",
+      "id": 11
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
