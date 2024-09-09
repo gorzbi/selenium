@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Testing Google xml">
+    <test name="Pierwszy name test xml">
+        <parameter name="author" value="xmlGorzbi1" />
+        <parameter name="device" value="xmlPC1" />
+        <parameter name="category" value="xmlkat1" />
+        <classes>
+            <class name="tests.PierwszyTest"> <!-- nazwa klasy testowej -->
+            <methods>
+                <include name="metodaJuve" /> <!-- nazwa metody testowej w tej klasie-->
+            </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Drugi name test xml">
+        <parameter name="author" value="xmlGorzbi2" />
+        <parameter name="device" value="xmlPC2" />
+        <parameter name="category" value="xmlkat2" />
+        <classes>
+            <class name="tests.PierwszyTest">
+                <methods>
+                    <include name="metodaBarca" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Trzeci name test xml">
+        <parameter name="author" value="xmlGorzbi3" />
+        <parameter name="device" value="xmlPC3" />
+        <parameter name="category" value="xmlkat3" />
+        <classes>
+            <class name="tests.PierwszyTest">
+                <methods>
+                    <include name="metodaReal" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
