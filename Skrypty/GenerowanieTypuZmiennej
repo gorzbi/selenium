@@ -1,0 +1,35 @@
+1. klasa
+
+// przy nazwie klasy określamy <> że typ zmiennych będzie podany jako parametr
+
+public class KonstruktorGeneryczny <T>{
+
+    T pole;
+
+    public KonstruktorGeneryczny(T pole) {
+        this.pole = pole;
+    }
+
+    public void pokazWartoscPola(){
+        System.out.println("Pole ma wartość: "+pole);
+    }
+}
+
+
+2. klasa
+import org.testng.annotations.Test;
+
+public class TypGeneryczny {
+
+    @Test
+    public void test() {
+
+        // przy wywołaniu podajemy parametr jakiego typu ma być zmienna
+
+        KonstruktorGeneryczny <String> pierwszy = new KonstruktorGeneryczny<>("tekst");
+        pierwszy.pokazWartoscPola();
+
+        KonstruktorGeneryczny <Integer> drugi = new KonstruktorGeneryczny<>(12);
+        drugi.pokazWartoscPola();
+    }
+}
