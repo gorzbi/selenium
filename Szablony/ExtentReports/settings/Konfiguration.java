@@ -20,6 +20,7 @@ import java.lang.reflect.Method;
 
 public class Konfiguration {
 
+    // protected - przekazywany w klasie, która dziedziczy
     protected static WebDriver driver;
     protected static ExtentReports raport;
     protected static ExtentTest extent;
