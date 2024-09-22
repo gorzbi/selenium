@@ -1,3 +1,7 @@
+Driver:
+- w konfiguracji ustawić jako protected static Webdriver driver;
+- w page jako pole Webdriver driver; + PageFactory.initElements dla każdego page class
+
 /*
 * screen przechowywać najlepiej w tym samym folderze co raporty tylko w podfolderze, bo raport może ich nie wczytać
 * zrobić ścieżkę absolutną do zapisu screena
