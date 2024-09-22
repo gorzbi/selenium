@@ -3,6 +3,10 @@
 @BeforeClass – uruchamiane raz przed wszystkimi metodami testowymi w danej klasie.
 @BeforeMethod – uruchamiane przed każdą metodą testową oznaczoną jako @Test
 
+Driver:
+- w konfiguracji ustawić jako protected static Webdriver driver;
+- w page jako pole Webdriver driver; + PageFactory.initElements dla każdego page class
+
 Pliki:
 I. main:
 
