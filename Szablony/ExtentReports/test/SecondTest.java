@@ -1,27 +1,23 @@
 package test;
 
-import dane.DaneLogin;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.LoginPage;
 import settings.Konfiguration;
 
 public class SecondTest extends Konfiguration {
 
-    @Test (priority = 1, testName = "secondTestA", groups= {"kat2","kat3"})
+    @Test (priority = 1, testName = "secondTestA", groups= {"kat2","kat3"}, description = "Test - validation for blocked user")
     public void secondTestA() {
 
-        DaneLogin dane = new DaneLogin();
-
         LoginPage lp = new LoginPage(driver);
-        lp.login(dane);
+
+        lp.loginManual("locked_out_user", "secret_sauce");
+        lp.checkBlockedErrorMessage();
 
     }
 
-    @Test (priority = 1, testName = "secondTestB", groups= {"kat2"})
+    @Test (priority = 1, testName = "secondTestB", groups= {"kat2"}, description = "Test failed - no such element")
     public void secondTestB() {
-
-        DaneLogin dane = new DaneLogin();
 
         LoginPage lp = new LoginPage(driver);
         lp.error();
