@@ -1,4 +1,4 @@
-Plik testng.xml nie jest potrzebny gdy, w konfiguracji nie przypisuję do raportu autora i urządzenia
+Plik testng.xml nie jest potrzebny gdy, w konfiguracji nie przypisuję do raportu autora i urządzenia. Reszta danych jest pobierana z klass @Test dla każdego testu osobbno opisanymi atrubutami, np. groups/description
 
 
 Driver:
