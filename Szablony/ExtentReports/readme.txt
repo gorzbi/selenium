@@ -1,3 +1,6 @@
+Plik testng.xml nie jest potrzebny gdy, w konfiguracji nie przypisuję do raportu autora i urządzenia
+
+
 Driver:
 - w konfiguracji ustawić jako protected static Webdriver driver;
 - w page jako pole Webdriver driver; + PageFactory.initElements dla każdego page class
