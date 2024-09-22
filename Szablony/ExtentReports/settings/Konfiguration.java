@@ -91,18 +91,21 @@ public class Konfiguration {
         if(result.getStatus()==ITestResult.FAILURE) {
 
             // 1 -> screeny na górze raportu
+            extent.fail("Noooo !!!!");
             // FromBase64 -> screen bez podglądu, dopiero po kliknięciu
             extent.addScreenCaptureFromBase64String(Screen.capture64(driver), "Tytuł screena");
             // FromPath -> screen zostanie dodany na górze raportu z podglądem
             extent.addScreenCaptureFromPath(Screen.takeScreenshot(driver));
 
             // 2 -> screeny w kroku raportu wraz z komunikatem
+            extent.fail("Noooo !!!!");
             // screen code64
             extent.fail(result.getThrowable().toString().substring(0,140), MediaEntityBuilder.createScreenCaptureFromBase64String(Screen.capture64(driver)).build());
             // screen metodą screenPath
             extent.fail(result.getThrowable().toString().substring(0,140), MediaEntityBuilder.createScreenCaptureFromPath(Screen.takeScreenshot(driver)).build());
-
+            
             // 3 -> kod błędu i screeny są osobno w kroku
+            extent.fail("Noooo !!!!");
             extent.fail(result.getThrowable().toString().substring(0,140));
             extent.fail(MediaEntityBuilder.createScreenCaptureFromBase64String(Screen.capture64(driver)).build());
             extent.fail(MediaEntityBuilder.createScreenCaptureFromPath(Screen.takeScreenshot(driver)).build());
