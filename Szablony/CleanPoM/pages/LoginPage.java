@@ -18,8 +18,8 @@ public class LoginPage {
     private WebElement loginButton;
 
 
-    private WebDriver driver;
-    private DaneLogin daneLogin;
+    WebDriver driver;
+    DaneLogin daneLogin;
 
     public LoginPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
