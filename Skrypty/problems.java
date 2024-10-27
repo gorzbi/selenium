@@ -1,3 +1,9 @@
+// test bez otwierania przeglądarki
+
+        WebDriverManager.firefoxdriver().setup();
+        FirefoxOptions opcje = new FirefoxOptions();
+        opcje.setHeadless(true);
+
 // kliknięcie w element, który jest zasłonięty przez inny, np. kliknięcie w przycisk szukania gdy zasłania go lista rozwijalna
 
         WebElement symphony = driver.findElement(By.xpath("//button[@class='hide-button']"));
