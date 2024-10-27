@@ -1,22 +1,3 @@
-import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxOptions;
-import org.testng.annotations.Test;
-
-public class xPath {
-
-    @Test
-
-    public void testyxpath() {
-
-        WebDriverManager.firefoxdriver().setup();
-        FirefoxOptions opcje = new FirefoxOptions();
-        opcje.setHeadless(true);
-
-        WebDriver firefox = new FirefoxDriver(opcje);
-
         firefox.get("https://testeroprogramowania.github.io/selenium/basics.html");
 
         // odszukanie elementu przez id
@@ -105,6 +86,4 @@ public class xPath {
         findElement(By.xpath("//*[@class='vs__dropdown-menu']/li[contains(text(),'"+value+"')]")); // dla string zawierającego fragment textu
         findElement(By.xpath("//*[@class='vs__dropdown-menu']/li[normalize-space(text())='"+value+"']")); //dla konkretnego string, usuwa white spaces                            
         findElement(By.xpath("//*[@class='vs__dropdown-menu']/li["+value+"]")); // dla int
-                                     
-    }
-}
+                    
