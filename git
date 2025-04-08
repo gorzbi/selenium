@@ -78,7 +78,9 @@ dodać folder .idea/ do .gitignore i wyczyścić pamięć git clean -fd
 usunąć ręcznie niechciane pliki, np. rm .idea/compiler.xml
 
 gdy pojawi się błąd Deletion of directory
-git clean -fdX -> wywali śledzenie nieśledzonych
+git clean -ndX -> aby podejrzeć co będzie usunięte
+git clean -fdX -> usuwanie nieśledzonych
+gdy nie działa tzn. że Intellij blokuje jakiś proces - zrestartować intellij
 
 // ---------------------------------------------------merge--------------------------------------------------
 
