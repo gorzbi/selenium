@@ -102,7 +102,7 @@ git commit -m "komentarz" (branch już będzie master)
 
 
 
-// ---------------------------------------------------local to online--------------------------------------------------
+// ---------------------------------------------------push local to online--------------------------------------------------
 
 // transfer lokal do online - branch <nazwa brancha>
 git push -u origin <nazwa brancha>
@@ -111,7 +111,7 @@ git push origin <nazwa brancha>
 // update lokal do online - wszystkie branche
 git push origin --all
 
-// ---------------------------------------------------online to local--------------------------------------------------
+// ---------------------------------------------------pull online to local--------------------------------------------------
 
 // klonowanie z online - tworzenie nowego projektu
 // zainicjalizować repo w folderze - nazwa folderu jako nazwa projektu
