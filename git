@@ -66,6 +66,17 @@ git checkout -b <nazwa nowego brancha>
 // przełączenie się na inny branch
 git checkout <nazwa brancha>
 
+// przełączanie się na inny branch gdy wcześniej dokonano zmiany, której nie chcemy commitować
+git stash
+git stash save "your optional message"
+
+w menu: GIT >> >> Unstash Changes
+
+// wkurzające pliki nie pozwalające przełączyć brancha
+stasz wszystkie nieśledzone pliki -> git stash -u 
+dodać folder .idea/ do .gitignore i wyczyścić pamięć git clean -fd
+usunąć ręcznie niechciane pliki, np. rm .idea/compiler.xml
+
 // ---------------------------------------------------merge--------------------------------------------------
 
 ogólnie to najpierw powinniśmmy pobrać aktualny stan brancha na który chcemy wysłać
