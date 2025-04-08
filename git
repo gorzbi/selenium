@@ -1,6 +1,13 @@
+// ---------------------------------------------------połączenie z github--------------------------------------------------
+
+// połączenie lokal repo z online
+git remote add origin <hhtps>
+
+// ---------------------------------------------------praca z git--------------------------------------------------
+
 GIT: working copy (add) >> indeks (commit) >> repo lokalne (push) >> repo online
 
-// configuracja usera aby w historii było widać kto kiedy jakie zmiany robił
+// konfiguracja usera aby w historii było widać kto kiedy jakie zmiany robił
 git config --global user.name
 git config --global user.email
 
@@ -76,10 +83,9 @@ git status // powinno pokazywać plik w którym zrobiliśmy zmianę  (branch to:
 git add .
 git commit -m "komentarz" (branch już będzie master)
 
-// ---------------------------------------------------połączenie z github--------------------------------------------------
 
-// połączenie lokal repo z online
-git remote add origin <hhtps>
+
+// ---------------------------------------------------local to online--------------------------------------------------
 
 // transfer lokal do online - branch <nazwa brancha>
 git push -u origin <nazwa brancha>
@@ -87,6 +93,8 @@ git push origin <nazwa brancha>
 
 // update lokal do online - wszystkie branche
 git push origin --all
+
+// ---------------------------------------------------online to local--------------------------------------------------
 
 // transfer online do lokal
 // zainicjalizować repo w folderze
