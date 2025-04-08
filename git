@@ -61,6 +61,8 @@ git checkout <nazwa brancha>
 
 // ---------------------------------------------------merge--------------------------------------------------
 
+ogólnie to najpierw powinniśmmy pobrać aktualny stan brancha na który chcemy wysłać
+
 // mergowanie zmian z brancha do master
 git checkout master // musimy przepiąć się na master
 git merge <nazwa brancha> // dodaje-usuwa pliki tak jak jest to na nowym branchu, przenosi widok na mastera
