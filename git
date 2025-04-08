@@ -77,6 +77,9 @@ stasz wszystkie nieśledzone pliki -> git stash -u
 dodać folder .idea/ do .gitignore i wyczyścić pamięć git clean -fd
 usunąć ręcznie niechciane pliki, np. rm .idea/compiler.xml
 
+gdy pojawi się błąd Deletion of directory
+git clean -fdX -> wywali śledzenie nieśledzonych
+
 // ---------------------------------------------------merge--------------------------------------------------
 
 ogólnie to najpierw powinniśmmy pobrać aktualny stan brancha na który chcemy wysłać
