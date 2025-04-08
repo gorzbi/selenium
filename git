@@ -79,9 +79,9 @@ git commit -m "komentarz" (branch już będzie master)
 // połączenie lokal repo z online
 git remote add origin <hhtps>
 
-// transfer lokal do online - master branch
-git push -u origin master
-git push origin master
+// transfer lokal do online - branch <nazwa brancha>
+git push -u origin <nazwa brancha>
+git push origin <nazwa brancha>
 
 // update lokal do online - wszystkie branche
 git push origin --all
@@ -91,5 +91,8 @@ git push origin --all
 git clone <https>
 
 // update lokal z online
-git pull origin master // update lokal z brancha master online
+przełączyć się na wybrany branch który chcemy zaktualizować
+git checkout <nazwa brancha>
+
+git pull origin <nazwa brancha online> // update lokal z brancha online
 // alternatynie git fetch + git merge
