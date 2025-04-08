@@ -70,7 +70,7 @@ git checkout <nazwa brancha>
 git stash
 git stash save "your optional message"
 
-w menu: GIT >> >> Unstash Changes
+najlepsza opcja: w menu: GIT >> Uncomited changes >> Unstash Changes
 
 // wkurzające pliki nie pozwalające przełączyć brancha
 stasz wszystkie nieśledzone pliki -> git stash -u 
