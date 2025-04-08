@@ -68,6 +68,7 @@ git checkout <nazwa brancha>
 
 // przełączanie się na inny branch gdy wcześniej dokonano zmiany, której nie chcemy commitować
 git stash
+git stash -u -> wszystkie nieśledzone
 git stash save "your optional message"
 
 najlepsza opcja: w menu: GIT >> Uncomited changes >> Unstash Changes
