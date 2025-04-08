@@ -96,13 +96,13 @@ git push origin --all
 
 // ---------------------------------------------------online to local--------------------------------------------------
 
-// transfer online do lokal
-// zainicjalizować repo w folderze
+// klonowanie z online - tworzenie nowego projektu
+// zainicjalizować repo w folderze - nazwa folderu jako nazwa projektu
+// w jego wnętrzu inicjalizacja git i pobieranie repo z online
 git clone <https>
 
 // update lokal z online
 przełączyć się na wybrany branch który chcemy zaktualizować
 git checkout <nazwa brancha>
-
 git pull origin <nazwa brancha online> // update lokal z brancha online
 // alternatynie git fetch + git merge
