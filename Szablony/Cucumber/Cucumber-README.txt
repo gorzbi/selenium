@@ -9,7 +9,7 @@ Dependencje:
     <groupId>io.cucumber</groupId>
     <artifactId>cucumber-java</artifactId>
     <version>7.11.2</version>
-    <scope>test</scope>
+    // usunąć <scope>test</scope> bo nie widzi adnotacji after/before/scenario
 </dependency>
 
 // cucumber testng bo w projekcie też korzystam z testng a nie junit
