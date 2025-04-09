@@ -27,6 +27,7 @@ public class Konfig {
 
     @BeforeSuite
     @Before
+    // before odczytuje dependencję Scenario
     public void start() {
 
         // rozwiązanie problemu z uruchamianiem na chrome
@@ -78,6 +79,7 @@ public class Konfig {
      */
     @AfterMethod
     @After
+    // after odczytuje dependencję Scenario
     public void tearDown(Scenario scenario) {
 
             //validate if scenario has failed
