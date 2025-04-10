@@ -5,25 +5,52 @@ Pluginy:
 - cucumber for java
 
 Dependencje:
-<dependency>
-    <groupId>io.cucumber</groupId>
-    <artifactId>cucumber-java</artifactId>
-    <version>7.11.2</version>
-    // usunąć <scope>test</scope> bo nie widzi adnotacji after/before/scenario
-</dependency>
+    <dependencies>
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>6.0.1</version>
+        </dependency>
 
-// cucumber testng bo w projekcie też korzystam z testng a nie junit
-<dependency>
-    <groupId>io.cucumber</groupId>
-    <artifactId>cucumber-testng</artifactId>
-    <version>7.10.1</version>
-</dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>4.31.0</version>
+        </dependency>
 
-<dependency>
-     <groupId>io.cucumber</groupId>
-     <artifactId>cucumber-picocontainer</artifactId>
-     <version>7.12.0</version>
-</dependency>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.16.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.11.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>7.21.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-testng</artifactId>
+            <version>7.22.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-picocontainer</artifactId>
+            <version>7.22.0</version>
+        </dependency>
+
+    </dependencies>
+
+BRAK SCREEN!! To może powodować najnowsza wersja dependencji cucumber-java > wystarczy wybrać jakąś wcześniejszą
 
 Struktura projetku:
 1. w main/java wszystkie paczki/pliki:
