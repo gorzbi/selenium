@@ -1,0 +1,8 @@
+pages\LoginPage.class
+tools\Screen.class
+pages\MainPage.class
+dane\DaneLogin.class
+tools\Wait.class
+settings\DriverFactory.class
+settings\Konfiguration.class
+settings\DriverType.class
