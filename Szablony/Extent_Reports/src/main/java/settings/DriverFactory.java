@@ -24,8 +24,6 @@ public class DriverFactory {
 
         // alternatywne rozwiązanie
     public static WebDriver getDriver(DriverType type) {
-
-        String error = "Browser does not exist";
         
         switch (type) {
             case DriverType.FIREFOX:
