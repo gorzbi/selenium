@@ -12,6 +12,7 @@ public class Konfiguration {
     @BeforeMethod
     public void openBrowser() throws InterruptedException {
 
+        //driver = DriverFactory.alternativeGetDriver(DriverType.FIREFOX);
         driver = DriverFactory.getDriver(DriverType.FIREFOX);
         driver.manage().window().maximize();
 
