@@ -80,6 +80,7 @@ public class Konfiguration {
         //extent.assignAuthor(author);
         //extent.assignDevice(urzadzenie);
 
+        //driver = DriverFactory.alternativeGetDriver(DriverType.FIREFOX);
         driver = DriverFactory.getDriver(DriverType.FIREFOX);
         driver.manage().window().maximize();
 
