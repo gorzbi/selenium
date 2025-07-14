@@ -22,20 +22,23 @@ public class DriverFactory {
         }
     }
 
-        // alternatywne rozwiązanie
-    public static WebDriver getDriver(DriverType type) {
-        
+    public static WebDriver alternativeGetDriver(DriverType type) {
+
         switch (type) {
-            case DriverType.FIREFOX:
+            case FIREFOX:
                 WebDriverManager.firefoxdriver().setup();
                 return new FirefoxDriver();
-            case DriverType.CHROME:
-                 WebDriverManager.chromedriver().setup();
-                 return new ChromeDriver();
+
+            case CHROME:
+                WebDriverManager.chromedriver().setup();
+                return new ChromeDriver();
+
+            case EDGE:
+                WebDriverManager.edgedriver().setup();
+                return new EdgeDriver();
+
             default:
-                System.out.println("Browser does not exist");
+                throw new IllegalArgumentException("Nie ma takiej przeglądarki: " + type);
         }
-        // co tu dokładnie zwrócić jeszcze nie wiem
-        return new EdgeDriver();
     }
 }
