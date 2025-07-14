@@ -60,6 +60,7 @@ public class Konfig {
     @Before
     public void takeBrowser() {
 
+        //driver = DriverFactory.alternativeGetDriver(DriverType.FIREFOX);
         driver = DriverFactory.getDriver(DriverType.FIREFOX);
         driver.manage().window().maximize();
 
