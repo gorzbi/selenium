@@ -1,3 +1,5 @@
+// jak budować xpath -> https://www.cheat-sheets.org/saved-copy/Locators_table_1_0_2.pdf 
+
 dla xpath -> $x("")
   - tag, np. input -> $x("//input/div/button[@id='xxx']")
   
