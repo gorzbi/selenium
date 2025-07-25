@@ -1,5 +1,4 @@
-// dobre praktyki z POM i builder wykorzystywany do konstruktora + Lombok
-// https://www.youtube.com/watch?v=gMM4eag4A84 od 7:30
+// dobre praktyki z POM i builder wykorzystywany do konstruktora + Lombok -> https://www.youtube.com/watch?v=gMM4eag4A84 od 7:30
 
 // rozwiązanie problemu z uruchamianiem na chrome
 
