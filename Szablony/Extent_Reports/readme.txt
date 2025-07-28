@@ -1,3 +1,6 @@
+Lombok -> do generowania jakie pola formularza wypełniać w danym scenariuszu testowym -> wymagana dependencja + plugin
+Wykorzystuje @Builder @Getter i odwołuje się do buildera z wybieraną listą parametrów, które chcemy wykorzystać w danym scenario + build() 
+
 Plik testng.xml nie jest potrzebny gdy, w konfiguracji nie przypisuję do raportu autora i urządzenia. Reszta danych jest pobierana z klass @Test dla każdego testu osobbno opisanymi atrubutami, np. groups/description
 
 
@@ -54,6 +57,14 @@ W przypadku Jenkins może być potrzebna dependencja surefire-plugin do budowani
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
             <version>2.19.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.38</version>
+            <scope>provided</scope>
         </dependency>
 
     </dependencies>
