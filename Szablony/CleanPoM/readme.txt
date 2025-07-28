@@ -1,3 +1,6 @@
+Lombok -> do generowania jakie pola formularza wypełniać w danym scenariuszu testowym -> wymagana dependencja + plugin
+Wykorzystuje @Builder @Getter i odwołuje się do buildera z wybieraną listą parametrów, które chcemy wykorzystać w danym scenario + build() 
+
 @BeforeSuite – uruchamiane raz przed całą suite testów, np. połączenie z bazą danych.
 @BeforeTest – uruchamiane przed blokiem testowym w pliku XML, który może zawierać wiele klas.
 @BeforeClass – uruchamiane raz przed wszystkimi metodami testowymi w danej klasie.
